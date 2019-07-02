@@ -1,27 +1,25 @@
-# webpack+babelŠÂ‹«‰º‚ÅPixiJS‚ğÀs‚·‚éƒeƒXƒg
-QÆŒ³‚Í‰º‹L
+# webpack+babelç’°å¢ƒä¸‹ã§PixiJSã‚’å®Ÿè¡Œã™ã‚‹ãƒ†ã‚¹ãƒˆ
+å‚ç…§å…ƒã¯ä¸‹è¨˜
 
-**ÅV”Å‚ÅŠw‚Ôwebpack 4“ü–å JavaScript‚Ìƒ‚ƒWƒ…[ƒ‹ƒoƒ“ƒhƒ‰**  
+**æœ€æ–°ç‰ˆã§å­¦ã¶webpack 4å…¥é–€ JavaScriptã®ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ãƒãƒ³ãƒ‰ãƒ©**  
 [https://ics.media/entry/12140/](https://ics.media/entry/12140/)  
-„webpack‚Ì“±“ü`ƒrƒ‹ƒh  
+ï¼webpackã®å°å…¥ï½ãƒ“ãƒ«ãƒ‰  
 
-**ÅV”Å‚ÅŠw‚Ôwebpack 4“ü–å - Babel 7‚ÅES2019ŠÂ‹«‚Ì\’ziReact, Vue, Three.js, jQuery‚ÌƒTƒ“ƒvƒ‹•t‚«j**  
+**æœ€æ–°ç‰ˆã§å­¦ã¶webpack 4å…¥é–€ - Babel 7ã§ES2019ç’°å¢ƒã®æ§‹ç¯‰**  
 [https://ics.media/entry/16028/](https://ics.media/entry/16028/)  
-„webpack+Babel“±“ü`jQuery‚ğƒ‚ƒWƒ…[ƒ‹‚Æ‚µ‚Ä’Ç‰Á  
+ï¼webpack+Babelå°å…¥ï½jQueryã‚’ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã¨ã—ã¦è¿½åŠ   
 
-**webpackƒCƒ“ƒXƒg[ƒ‹Œã‚ÌƒZƒbƒgƒAƒbƒvƒpƒ^[ƒ“‚Ü‚Æ‚ßBBabel/ESLint/SASS‚È‚Ç‚ğ—p‚¢‚Äƒtƒƒ“ƒgƒGƒ“ƒhŠJ”­ŠÂ‹«‚ğ®‚¦‚é**  
+**webpackã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¾Œã®ã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ—ãƒ‘ã‚¿ãƒ¼ãƒ³ã¾ã¨ã‚ã€‚**  
 [https://www.ritolab.com/entry/159#aj_4_4](https://www.ritolab.com/entry/159#aj_4_4)  
-„‰æ‘œ‚ğbase64ƒGƒ“ƒR[ƒh‚Åƒoƒ“ƒhƒ‹‚·‚é  
+ï¼ç”»åƒã‚’base64ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ã§ãƒãƒ³ãƒ‰ãƒ«ã™ã‚‹  
 
-**webpack‚Å‰æ‘œ‚ğ“Ç‚İ‚Ş**  
+**webpackã§ç”»åƒã‚’èª­ã¿è¾¼ã‚€**  
 [http://a0sy.hatenablog.jp/entry/2015/08/03/204933](http://a0sy.hatenablog.jp/entry/2015/08/03/204933)  
 
-**DEMO**  
-[https://evofan.github.io/pixijs_sequence_anime_test/](https://evofan.github.io/pixijs_sequence_anime_test/)
 
-**è‡**  
+**æ‰‹é †**  
 
-ƒvƒƒWƒFƒNƒg—pƒfƒBƒŒƒNƒgƒŠ‚ğì¬
+ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆç”¨ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ä½œæˆ
 
 npm init -y
 
@@ -29,8 +27,9 @@ npm i -D webpack webpack-cli
 
 npm i -D babel-loader @babel/core @babel/preset-env
 
-npm i pixi.js // ƒ‚ƒWƒ…[ƒ‹‚Æ‚µ‚Ä“Ç‚İ‚İ‚½‚¢‚Ì‚ÅA-D‚Íg‚í‚È‚¢
+npm i pixi.js // ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã¨ã—ã¦èª­ã¿è¾¼ã¿ãŸã„ã®ã§ã€-Dã¯ä½¿ã‚ãªã„
 
+```
 package.json
 ------------------------------------------------------------------
 {
@@ -47,7 +46,7 @@ package.json
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "pixi.js": "^5.0.4" // PixiJS‚Í‚±‚¿‚ç‚É“o˜^
+    "pixi.js": "^5.0.4" // PixiJSã¯ã“ã¡ã‚‰ã«ç™»éŒ²
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -65,49 +64,49 @@ package.json
 webpack.config.js
 ------------------------------------------------------------------
 module.exports = {
-  // ƒ‚[ƒh’l‚ğ production ‚Éİ’è‚·‚é‚ÆÅ“K‰»‚³‚ê‚½ó‘Ô‚ÅA
-  // development ‚Éİ’è‚·‚é‚Æƒ\[ƒXƒ}ƒbƒv—LŒø‚ÅJSƒtƒ@ƒCƒ‹‚ªo—Í‚³‚ê‚é
+  // ãƒ¢ãƒ¼ãƒ‰å€¤ã‚’ production ã«è¨­å®šã™ã‚‹ã¨æœ€é©åŒ–ã•ã‚ŒãŸçŠ¶æ…‹ã§ã€
+  // development ã«è¨­å®šã™ã‚‹ã¨ã‚½ãƒ¼ã‚¹ãƒãƒƒãƒ—æœ‰åŠ¹ã§JSãƒ•ã‚¡ã‚¤ãƒ«ãŒå‡ºåŠ›ã•ã‚Œã‚‹
   mode: "production",
   // mode: "development",
 
-  // ƒ[ƒJƒ‹ŠJ”­—pŠÂ‹«‚ğ—§‚¿ã‚°‚é
-  // Às‚Éƒuƒ‰ƒEƒU‚ª©“®“I‚É localhost ‚ğŠJ‚­
+  // ãƒ­ãƒ¼ã‚«ãƒ«é–‹ç™ºç”¨ç’°å¢ƒã‚’ç«‹ã¡ä¸Šã’ã‚‹
+  // å®Ÿè¡Œæ™‚ã«ãƒ–ãƒ©ã‚¦ã‚¶ãŒè‡ªå‹•çš„ã« localhost ã‚’é–‹ã
   devServer: {
     contentBase: "dist",
     open: true
   },
 
-  // ƒƒCƒ“‚Æ‚È‚éJavaScriptƒtƒ@ƒCƒ‹iƒGƒ“ƒgƒŠ[ƒ|ƒCƒ“ƒgj
+  // ãƒ¡ã‚¤ãƒ³ã¨ãªã‚‹JavaScriptãƒ•ã‚¡ã‚¤ãƒ«ï¼ˆã‚¨ãƒ³ãƒˆãƒªãƒ¼ãƒã‚¤ãƒ³ãƒˆï¼‰
   entry: "./src/index.js",
 
-  // ƒtƒ@ƒCƒ‹‚Ìo—Íİ’è
+  // ãƒ•ã‚¡ã‚¤ãƒ«ã®å‡ºåŠ›è¨­å®š
   output: {
-    //  o—Íƒtƒ@ƒCƒ‹‚ÌƒfƒBƒŒƒNƒgƒŠ–¼
+    //  å‡ºåŠ›ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªå
     path: `${__dirname}/dist`,
-    // o—Íƒtƒ@ƒCƒ‹–¼
+    // å‡ºåŠ›ãƒ•ã‚¡ã‚¤ãƒ«å
     filename: "main.js"
   },
 
   module: {
     rules: [
       {
-        // Šg’£q .js ‚Ìê‡
+        // æ‹¡å¼µå­ .js ã®å ´åˆ
         test: /\.js$/,
         use: [
           {
-            // Babel ‚ğ—˜—p‚·‚é
+            // Babel ã‚’åˆ©ç”¨ã™ã‚‹
             loader: "babel-loader",
-            // Babel ‚ÌƒIƒvƒVƒ‡ƒ“‚ğw’è‚·‚é
+            // Babel ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’æŒ‡å®šã™ã‚‹
             options: {
               presets: [
-                // ƒvƒŠƒZƒbƒg‚ğw’è‚·‚é‚±‚Æ‚ÅAES2019 ‚ğ ES5 ‚É•ÏŠ·
+                // ãƒ—ãƒªã‚»ãƒƒãƒˆã‚’æŒ‡å®šã™ã‚‹ã“ã¨ã§ã€ES2019 ã‚’ ES5 ã«å¤‰æ›
                 "@babel/preset-env"
               ]
             }
           }
         ]
       },
-      // ‰æ‘œ‚ğBase64ƒGƒ“ƒR[ƒh
+      // ç”»åƒã‚’Base64ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰
       {
         test: /\.(jpg|png|gif)$/,
         loader: "url-loader"
@@ -117,48 +116,50 @@ module.exports = {
 };
 ------------------------------------------------------------------
 
-// ƒrƒ‹ƒh
+// ãƒ“ãƒ«ãƒ‰
 npm run build
-¦mode‚Íwebpack.config.js“à‚Ìmode‚Åw’èidevelopment‚©productionj
-i–”‚Ínpx webpackj
+â€»modeã¯webpack.config.jså†…ã®modeã§æŒ‡å®šï¼ˆdevelopmentã‹productionï¼‰
+ï¼ˆåˆã¯npx webpackï¼‰
 
-// ƒ[ƒJƒ‹ƒT[ƒo[‚ğ“ü‚ê‚é
+// ãƒ­ãƒ¼ã‚«ãƒ«ã‚µãƒ¼ãƒãƒ¼ã‚’å…¥ã‚Œã‚‹
 npm i -D webpack-dev-server
 
 package.json
 ------------------------------------------------------------------
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server" // ©’Ç‰Á
+    "start": "webpack-dev-server" // â†è¿½åŠ 
   },
 ------------------------------------------------------------------
 
 webpack.config.js
 ------------------------------------------------------------------
-  // ƒ[ƒJƒ‹ŠJ”­—pŠÂ‹«‚ğ—§‚¿ã‚°‚é
-  // Às‚Éƒuƒ‰ƒEƒU‚ª©“®“I‚É localhost ‚ğŠJ‚­
+  // ãƒ­ãƒ¼ã‚«ãƒ«é–‹ç™ºç”¨ç’°å¢ƒã‚’ç«‹ã¡ä¸Šã’ã‚‹
+  // å®Ÿè¡Œæ™‚ã«ãƒ–ãƒ©ã‚¦ã‚¶ãŒè‡ªå‹•çš„ã« localhost ã‚’é–‹ã
   devServer: {
-    contentBase: "dist", // ©’Ç‰Á
+    contentBase: "dist", // â†è¿½åŠ 
     open: true
   }
 ------------------------------------------------------------------
 
-// ƒuƒ‰ƒEƒU‚ğ‹N“®‚µƒ[ƒJƒ‹ihttp://localhost:8080/j‚ÅÀs
+// ãƒ–ãƒ©ã‚¦ã‚¶ã‚’èµ·å‹•ã—ãƒ­ãƒ¼ã‚«ãƒ«ï¼ˆhttp://localhost:8080/ï¼‰ã§å®Ÿè¡Œ
 npm run start
-i–”‚Ínpx webpack-dev-serverj
+ï¼ˆåˆã¯npx webpack-dev-serverï¼‰
 
-// ƒuƒ‰ƒEƒU‚ğ‹N“®‚¹‚¸ƒ[ƒJƒ‹‚Å·•ªƒrƒ‹ƒhibuild‚æ‚è‘¬‚¢j
+// ãƒ–ãƒ©ã‚¦ã‚¶ã‚’èµ·å‹•ã›ãšãƒ­ãƒ¼ã‚«ãƒ«ã§å·®åˆ†ãƒ“ãƒ«ãƒ‰ï¼ˆbuildã‚ˆã‚Šé€Ÿã„ï¼‰
 npm run watch
-i–”‚Ínpx webpack --watchj
+ï¼ˆåˆã¯npx webpack --watchï¼‰
 
-package.jsonƒtƒ@ƒCƒ‹
+package.jsonãƒ•ã‚¡ã‚¤ãƒ«
 -----------------------------------------------
 {
   "scripts": {
     "build": "webpack",
-    "watch": "webpack --watch" // ©’Ç‰Á
+    "watch": "webpack --watch" // â†è¿½åŠ 
   },
 -----------------------------------------------
 
-// ‰æ‘œ‚ğƒoƒ“ƒhƒ‹‚·‚é‚½‚ß‚É’Ç‰Á
+// ç”»åƒã‚’ãƒãƒ³ãƒ‰ãƒ«ã™ã‚‹ãŸã‚ã«è¿½åŠ 
 npm i -D file-loader url-loader
+
+```
