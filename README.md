@@ -16,8 +16,10 @@
 **webpackで画像を読み込む**  
 [http://a0sy.hatenablog.jp/entry/2015/08/03/204933](http://a0sy.hatenablog.jp/entry/2015/08/03/204933)  
 
-
-**手順**  
+**DEMO**  
+[https://evofan.github.io/pixijs_webpack_babel/](https://evofan.github.io/pixijs_webpack_babel/)  
+  
+  **手順**  
 
 プロジェクト用ディレクトリを作成
 
@@ -115,15 +117,17 @@ module.exports = {
   }
 };
 ------------------------------------------------------------------
+```
 
-// ビルド
-npm run build
-※modeはwebpack.config.js内のmodeで指定（developmentかproduction）
-（又はnpx webpack）
+ビルド  
+npm run build  
+※modeはwebpack.config.js内のmodeで指定（developmentかproduction）  
+（又はnpx webpack）  
 
-// ローカルサーバーを入れる
+ローカルサーバーを入れる  
 npm i -D webpack-dev-server
 
+```
 package.json
 ------------------------------------------------------------------
   "scripts": {
@@ -141,15 +145,17 @@ webpack.config.js
     open: true
   }
 ------------------------------------------------------------------
+```
 
-// ブラウザを起動しローカル（http://localhost:8080/）で実行
-npm run start
-（又はnpx webpack-dev-server）
+ブラウザを起動しローカルで実行（http://localhost:8080/)  
+npm run start  
+（又はnpx webpack-dev-server）  
 
-// ブラウザを起動せずローカルで差分ビルド（buildより速い）
-npm run watch
-（又はnpx webpack --watch）
+ブラウザを起動せずローカルで差分ビルド（buildより速い）  
+npm run watch  
+（又はnpx webpack --watch）  
 
+```
 package.jsonファイル
 -----------------------------------------------
 {
@@ -158,8 +164,7 @@ package.jsonファイル
     "watch": "webpack --watch" // ←追加
   },
 -----------------------------------------------
-
-// 画像をバンドルするために追加
-npm i -D file-loader url-loader
-
 ```
+
+画像をバンドルするために追加  
+npm i -D file-loader url-loader
