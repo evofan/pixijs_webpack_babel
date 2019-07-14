@@ -14,14 +14,26 @@
     "pixi.js": "^5.0.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
     "babel-loader": "^8.0.6",
     "file-loader": "^4.0.0",
+    "lodash": "^4.17.14",
     "url-loader": "^2.0.1",
-    "webpack": "^4.35.2",
-    "webpack-cli": "^3.3.5",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2"
   },
-  "description": ""
+  "description": "**DEMO**  \r [https://evofan.github.io/pixijs_webpack_babel/](https://evofan.github.io/pixijs_webpack_babel/)",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evofan/pixijs_webpack_babel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/evofan/pixijs_webpack_babel/issues"
+  },
+  "homepage": "https://github.com/evofan/pixijs_webpack_babel#readme"
 }
