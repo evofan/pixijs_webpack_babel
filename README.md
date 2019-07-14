@@ -1,5 +1,9 @@
-# webpack+babel環境下でPixiJSを実行するテスト
-参照元は下記
+# Test running PixiJS under webpack + babel environment  
+
+**DEMO**  
+[https://evofan.github.io/pixijs_webpack_babel/](https://evofan.github.io/pixijs_webpack_babel/)  
+
+reference  
 
 **最新版で学ぶwebpack 4入門 JavaScriptのモジュールバンドラ**  
 [https://ics.media/entry/12140/](https://ics.media/entry/12140/)  
@@ -15,11 +19,8 @@
 
 **webpackで画像を読み込む**  
 [http://a0sy.hatenablog.jp/entry/2015/08/03/204933](http://a0sy.hatenablog.jp/entry/2015/08/03/204933)  
-
-**DEMO**  
-[https://evofan.github.io/pixijs_webpack_babel/](https://evofan.github.io/pixijs_webpack_babel/)  
   
-  **手順**  
+procedure  
 
 プロジェクト用ディレクトリを作成
 
