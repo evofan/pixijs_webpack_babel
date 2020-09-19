@@ -18,7 +18,7 @@ import { TYPES } from "./config.js";
  * @param { object } app - reference.
  */
 export const Common = {
-  pixi_version: "PixiJS 5.0.4",
+  pixi_version: "PixiJS 5.3.3",
 
   getAppRenderSize: app => {
     let size = `width: ${app.renderer.width}, height: ${app.renderer.height}`;

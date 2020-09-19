@@ -11,16 +11,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "pixi.js": "^5.3.0"
+    "pixi.js": "^5.3.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.4",
-    "@babel/preset-env": "^7.10.4",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
     "babel-loader": "^8.1.0",
-    "file-loader": "^6.0.0",
-    "lodash": "^4.17.19",
+    "file-loader": "^6.1.0",
+    "lodash": "^4.17.20",
+    "node-forge": "^0.10.0",
     "url-loader": "^4.1.0",
-    "webpack": "^4.43.0",
+    "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
