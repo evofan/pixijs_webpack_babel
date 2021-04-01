@@ -21,6 +21,7 @@
     "file-loader": "^6.1.0",
     "lodash": "^4.17.20",
     "node-forge": "^0.10.0",
+    "ssri": "^8.0.1",
     "url-loader": "^4.1.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
