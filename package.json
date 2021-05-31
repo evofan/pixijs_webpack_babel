@@ -26,6 +26,7 @@
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
+    "ws": "^7.4.6",
     "y18n": "^5.0.5"
   },
   "description": "**DEMO**  \r [https://evofan.github.io/pixijs_webpack_babel/](https://evofan.github.io/pixijs_webpack_babel/)",
