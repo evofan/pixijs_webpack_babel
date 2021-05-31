@@ -169,3 +169,70 @@ package.jsonファイル
 
 画像をバンドルするために追加  
 npm i -D file-loader url-loader
+
+**browserslist / browserslist**  
+[https://github.com/browserslist/browserslist#browsers-data-updating](https://github.com/browserslist/browserslist#browsers-data-updating)  
+
+Browserslist: caniuse-lite is outdated. Please run:  
+npx browserslist@latest --update-db  
+```
+------------------------------------------------------------------
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+Latest version:     1.0.30001231
+Installed version:  1.0.30001228
+Removing old caniuse-lite from lock file
+Installing new caniuse-lite version
+$ npm install caniuse-lite
+Cleaning package.json dependencies from caniuse-lite
+$ npm uninstall caniuse-lite
+caniuse-lite has been successfully updated
+
+Target browser changes:
+- and_chr 85
++ and_chr 90
+- and_ff 79
++ and_ff 87
+- android 81
++ android 90
+- chrome 85
+- chrome 84
+- chrome 83
++ chrome 90
++ chrome 89
++ chrome 88
+- edge 85
+- edge 84
++ edge 90
++ edge 89
+- firefox 80
+- firefox 79
++ firefox 88
++ firefox 87
+- ios_saf 14.0
+- ios_saf 13.3
+- ios_saf 13.0-13.1
+- ios_saf 12.2-12.4
+- ios_saf 12.0-12.1
++ ios_saf 14.5
++ ios_saf 14.0-14.4
+- node 14.9.0
+- node 12.18.0
++ node 16.1.0
++ node 15.14.0
++ node 14.17.0
++ node 12.22.0
+- op_mob 59
++ op_mob 62
+- opera 70
+- opera 69
++ opera 75
++ opera 74
+- safari 13.1
++ safari 14.1
+- samsung 12.0
+- samsung 11.1-11.2
++ samsung 14.0
++ samsung 13.0
+------------------------------------------------------------------
+```
