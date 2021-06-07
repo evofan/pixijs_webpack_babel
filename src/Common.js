@@ -21,7 +21,8 @@ const pixi_ver = `PixiJS: ver.${PIXI.VERSION}`
  * @param { object } app - reference.
  */
 export const Common = {
-  pixi_version: pixi_ver,
+  // pixi_version: pixi_ver, // local ok, but global wrong data
+  pixi_version: "PixiJS: ver. 6.0.4",
 
   getAppRenderSize: app => {
     let size = `width: ${app.renderer.width}, height: ${app.renderer.height}`;
