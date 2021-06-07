@@ -3,7 +3,7 @@
 <img src="https://evofan.github.io/pixijs_webpack_babel/screenshot/pic_screenshot1.jpg" width="50%">  
 
 **DEMO**  
-[https://evofan.github.io/pixijs_webpack_babel/](https://evofan.github.io/pixijs_webpack_babel/)  
+[https://evofan.github.io/pixijs_webpack_babel/dist/](https://evofan.github.io/pixijs_webpack_babel/dist/)  
 
 reference  
 
