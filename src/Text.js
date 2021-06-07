@@ -17,7 +17,7 @@ export function displayDateText(app) {
   // console.log("dtText", dtText); // dtText 2019.7.2.Thu
 
   // Text
-  let text = new PIXI.Text(`Today: ${dtText}`, {
+  let textDate = new PIXI.Text(`Today: ${dtText}`, {
     fontFamily: "Arial",
     fontSize: 24,
     fill: 0x3366cc,
@@ -28,9 +28,9 @@ export function displayDateText(app) {
     dropShadow: false,
     dropShadowColor: "#666666"
   });
-  text.x = 120;
-  text.y = 50;
-  app.stage.addChild(text);
+  textDate.x = 120;
+  textDate.y = 50;
+  app.stage.addChild(textDate);
 }
 
 /**
@@ -40,14 +40,14 @@ export function displayDateText(app) {
  * @param { num } y position
  */
 export function displayParamText(app, str, y) {
-  let text = new PIXI.Text(`${str}`, {
+  let textParam = new PIXI.Text(`${str}`, {
     fontFamily: "Arial",
     fontSize: 16,
     fill: 0x333333,
     align: "left",
     fontWeight: "bold"
   });
-  text.x = 50;
-  text.y = y;
-  app.stage.addChild(text);
+  textParam.x = 50;
+  textParam.y = y;
+  app.stage.addChild(textParam);
 }
