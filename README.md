@@ -1,5 +1,7 @@
 # Test running PixiJS under webpack + babel environment  
 
+<img src="https://evofan.github.io/pixijs_webpack_babel/screenshot/pic_screenshot1.jpg" width="50%">  
+
 **DEMO**  
 [https://evofan.github.io/pixijs_webpack_babel/](https://evofan.github.io/pixijs_webpack_babel/)  
 
@@ -12,6 +14,11 @@ reference
 **最新版で学ぶwebpack 4入門 - Babel 7でES2019環境の構築**  
 [https://ics.media/entry/16028/](https://ics.media/entry/16028/)  
 ＞webpack+Babel導入～jQueryをモジュールとして追加  
+
+**最新版で学ぶwebpack 5入門 - Babel 7でES2020環境の構築**  
+[https://ics.media/entry/16028/](https://ics.media/entry/16028/)  
+＞ES5(IE11等)向けの指定（webpack 5以上で必要）  
+＞target: ["web", "es5"],
 
 **webpackインストール後のセットアップパターンまとめ。**  
 [https://www.ritolab.com/entry/159#aj_4_4](https://www.ritolab.com/entry/159#aj_4_4)  
@@ -41,26 +48,30 @@ package.json
   "main": "webpack.config.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server",
+    "start": "webpack serve",
     "watch": "webpack --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "pixi.js": "^5.0.4" // PixiJSはこちらに登録
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "babel-loader": "^8.0.6",
-    "file-loader": "^4.0.0",
-    "url-loader": "^2.0.1",
-    "webpack": "^4.35.2",
-    "webpack-cli": "^3.3.5",
-    "webpack-dev-server": "^3.7.2"
-  }
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "babel-loader": "^8.2.2",
+    "elliptic": "^6.5.4",
+    "file-loader": "^6.2.0",
+    "lodash": "^4.17.21",
+    "node-forge": "^0.10.0",
+    "pixi.js": "^6.0.4",
+    "ssri": "^8.0.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.1",
+    "webpack-dev-server": "^3.11.2",
+    "ws": "^7.4.6",
+    "y18n": "^5.0.8"
+  },
 }
 ------------------------------------------------------------------
 
@@ -69,26 +80,26 @@ webpack.config.js
 module.exports = {
   // モード値を production に設定すると最適化された状態で、
   // development に設定するとソースマップ有効でJSファイルが出力される
-  mode: "production",
-  // mode: "development",
+  // mode: "production",
+  mode: "development",
 
   // ローカル開発用環境を立ち上げる
   // 実行時にブラウザが自動的に localhost を開く
   devServer: {
-    contentBase: "dist",
-    open: true
+     contentBase: "dist",
+     open: true
   },
 
   // メインとなるJavaScriptファイル（エントリーポイント）
   entry: "./src/index.js",
 
   // ファイルの出力設定
-  output: {
+ output: {
     //  出力ファイルのディレクトリ名
     path: `${__dirname}/dist`,
     // 出力ファイル名
-    filename: "main.js"
-  },
+    filename: "main.js",
+ },
 
   module: {
     rules: [
@@ -114,8 +125,10 @@ module.exports = {
         test: /\.(jpg|png|gif)$/,
         loader: "url-loader"
       }
-    ]
-  }
+    ],
+  },
+ // ES5(IE11等)向けの指定
+  target: ["web", "es5"],
 };
 ------------------------------------------------------------------
 ```
