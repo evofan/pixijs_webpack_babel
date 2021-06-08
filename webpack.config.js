@@ -1,3 +1,5 @@
+// const path = require('path');
+
 module.exports = {
   // モード値を production に設定すると最適化された状態で、
   // development に設定するとソースマップ有効でJSファイルが出力される
@@ -7,20 +9,21 @@ module.exports = {
   // ローカル開発用環境を立ち上げる
   // 実行時にブラウザが自動的に localhost を開く
   devServer: {
-     contentBase: "dist",
-     open: true
+    contentBase: "dist",
+    open: true
   },
 
   // メインとなるJavaScriptファイル（エントリーポイント）
   entry: "./src/index.js",
 
   // ファイルの出力設定
- output: {
+  output: {
     //  出力ファイルのディレクトリ名
     path: `${__dirname}/dist`,
+    // path: path.resolve(__dirname, `${__dirname}/dist`),
     // 出力ファイル名
     filename: "main.js",
- },
+  },
 
   module: {
     rules: [
@@ -46,8 +49,14 @@ module.exports = {
         test: /\.(jpg|png|gif)$/,
         loader: "url-loader"
       }
-    ],
+    ]
   },
- // ES5(IE11等)向けの指定
+  // performance: { hints: false }
+  performance: {
+    maxEntrypointSize: 500000,
+    maxAssetSize: 500000,
+  },
+
+  // ES5(IE11等)向けの指定
   target: ["web", "es5"],
 };
