@@ -249,3 +249,37 @@ Target browser changes:
 + samsung 13.0
 ------------------------------------------------------------------
 ```
+
+ビルド時の警告を消す  
+
+**webpack5 をほぼチュートリアル通りに進める その1（jsファイルのみのビルド）Psychedelic Engineer Note**  
+[http://psychedelicnekopunch.com/archives/2057](http://psychedelicnekopunch.com/archives/2057)  
+
+**Webpack2のパフォーマンス警告を制御する - Qiita**  
+[https://qiita.com/terrierscript/items/f840b5ccff0c0be7420a](https://qiita.com/terrierscript/items/f840b5ccff0c0be7420a)  
+>performance: { hints: false }  
+
+**[webpack] WARNING in asset size limit、と出たときの対処法**  
+[https://zenn.dev/arisa_dev/articles/webpack-warning-code-splitting](https://zenn.dev/arisa_dev/articles/webpack-warning-code-splitting)  
+
+**webpackのパフォーマンスヒントが厳しい - とろろこんぶろぐ**  
+[https://oisham.hatenablog.com/entry/2019/04/08/094108](https://oisham.hatenablog.com/entry/2019/04/08/094108)  
+
+```
+------------------------------------------------------------------
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets:
+  main.js (412 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (412 KiB)
+      main.js
+
+
+WARNING in webpack performance recommendations:
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+------------------------------------------------------------------
+```
