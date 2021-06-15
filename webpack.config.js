@@ -47,7 +47,8 @@ module.exports = {
       // 画像をBase64エンコード
       {
         test: /\.(jpg|png|gif)$/,
-        loader: "url-loader"
+        // loader: "url-loader"
+        type: "asset/inline",
       }
     ]
   },
