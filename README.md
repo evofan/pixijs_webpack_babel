@@ -1,9 +1,20 @@
-# Test running PixiJS under webpack + babel environment  
+# Test running PixiJS under webpack + babel + base64encode environment  
 
-<img src="https://evofan.github.io/pixijs_webpack_babel/screenshot/pic_screenshot1.jpg" width="50%">  
+<img src="https://evofan.github.io/pixijs_webpack_babel/screenshot/pic_screenshot2.jpg" width="50%">  
 
 **DEMO**  
 [https://evofan.github.io/pixijs_webpack_babel/dist/](https://evofan.github.io/pixijs_webpack_babel/dist/)  
+
+**USAGE**  
+`npm install`  
+`npm run build`  
+`npm run start`  
+http://localhost:8080/
+
+memo  
+
+mode: "development" ... main.js -> 1633KB  
+mode: "production" ... main.js -> 424KB  
 
 reference  
 
