@@ -29,7 +29,11 @@ reference
 **最新版で学ぶwebpack 5入門 - Babel 7でES2020環境の構築**  
 [https://ics.media/entry/16028/](https://ics.media/entry/16028/)  
 ＞ES5(IE11等)向けの指定（webpack 5以上で必要）  
-＞target: ["web", "es5"],
+＞target: ["web", "es5"]  
+
+**最新版で学ぶwebpack 5入門 - スタイルシート(CSS/Sass)を取り込む方法**  
+[https://ics.media/entry/17376/#bundle-css](https://ics.media/entry/17376/#bundle-css)  
+＞CSSの読み込みに必要なローダーは、Style LoaderとCSS Loader  
 
 **webpackインストール後のセットアップパターンまとめ。**  
 [https://www.ritolab.com/entry/159#aj_4_4](https://www.ritolab.com/entry/159#aj_4_4)  
