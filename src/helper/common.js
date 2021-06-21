@@ -1,8 +1,6 @@
 import { TYPES } from "./config.js";
 import * as PIXI from "pixi.js";
 
-const pixi_ver = `PixiJS: ver.${PIXI.VERSION}`
-
 /**
  * Define the Common object using the export statement.
  * @type { object }
@@ -21,7 +19,7 @@ const pixi_ver = `PixiJS: ver.${PIXI.VERSION}`
  * @param { object } app - reference.
  */
 export const Common = {
-  pixi_version: pixi_ver,
+  pixi_version: `PixiJS: ver.${PIXI.VERSION}`,
 
   getAppRenderSize: app => {
     let size = `width: ${app.renderer.width}, height: ${app.renderer.height}`;
@@ -29,7 +27,7 @@ export const Common = {
   },
 
   getAppRenderType: app => {
-    let type = TYPES[app.renderer.type];
+    let type = `rederer: ${TYPES[app.renderer.type]}`;
     return type;
   }
 };

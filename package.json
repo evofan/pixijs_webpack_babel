@@ -10,7 +10,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "npm-check-updates": "^11.7.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.5",
@@ -22,10 +24,12 @@
     "pixi.js": "^6.0.4",
     "ssri": "^8.0.1",
     "url-loader": "^4.1.1",
-    "webpack": "^5.39.0",
+    "webpack": "^5.39.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2",
-    "ws": "^7.4.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^5.3.1",
+    "ws": "^7.5.0",
     "y18n": "^5.0.8"
   },
   "description": "**DEMO**  \r [https://evofan.github.io/pixijs_webpack_babel/](https://evofan.github.io/pixijs_webpack_babel/)",

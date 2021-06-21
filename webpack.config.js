@@ -1,4 +1,6 @@
 // const path = require('path');
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   // モード値を production に設定すると最適化された状態で、
@@ -15,6 +17,14 @@ module.exports = {
 
   // メインとなるJavaScriptファイル（エントリーポイント）
   entry: "./src/index.js",
+
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: "Pixi.js Demo", // If there is template.html, that title takes precedence
+      template: "./src/html/index.html"
+    })
+  ],
 
   // ファイルの出力設定
   output: {

@@ -4,7 +4,7 @@ import * as PIXI from "pixi.js";
  * Define the displayDateText() function using the export statement.
  * @param { object } app reference
  */
-export function displayDateText(app) {
+export const displayDateText = (app) => {
   // Date
   let dt = new Date();
   let year = dt.getFullYear();
@@ -20,16 +20,18 @@ export function displayDateText(app) {
   let textDate = new PIXI.Text(`Today: ${dtText}`, {
     fontFamily: "Arial",
     fontSize: 24,
-    fill: 0x3366cc,
+    // fill: 0x3366cc,
+    fill: 0x333333,
     align: "center",
     fontWeight: "bold",
-    stroke: "#ffffff",
+    stroke: "#cccccc",
     strokeThickness: 4,
     dropShadow: false,
-    dropShadowColor: "#666666"
+    dropShadowColor: "#666666",
+    lineJoin: "round"
   });
-  textDate.x = 120;
-  textDate.y = 50;
+  textDate.x = 110;
+  textDate.y = 10;
   app.stage.addChild(textDate);
 }
 
@@ -39,15 +41,16 @@ export function displayDateText(app) {
  * @param { string } str display text
  * @param { num } y position
  */
-export function displayParamText(app, str, y) {
+export const displayParamText = (app, str, y) => {
   let textParam = new PIXI.Text(`${str}`, {
     fontFamily: "Arial",
     fontSize: 16,
-    fill: 0x333333,
+    fill: 0xe0e0e0,
     align: "left",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    lineJoin: "round"
   });
-  textParam.x = 50;
+  textParam.x = 15;
   textParam.y = y;
   app.stage.addChild(textParam);
 }
