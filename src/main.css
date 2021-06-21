@@ -1,0 +1,22 @@
+﻿* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: #e0e0e0;
+}
+
+#container {
+  width: 90%;
+}
+
+h1 {
+  padding-top: 10px;
+}
+
+h2 {
+  padding-bottom: 10px;
+}
+
+p {
+  padding-bottom: 5px;
+}

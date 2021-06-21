@@ -8,6 +8,8 @@ import img_snowman from "./images/pic_yukidaruma.png";
 import img_bg from "./images/pic_darksky_bg.jpg";
 import img_snow from "./images/pic_snow.png";
 
+import "./main.css";
+
 const STAGE_WIDTH = 480;
 const STAGE_HEIGHT = 320;
 

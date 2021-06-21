@@ -22,7 +22,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: "Pixi.js Demo", // If there is template.html, that title takes precedence
-      template: "./src/html/index.html"
+      template: "./src/index.html"
     })
   ],
 
@@ -51,6 +51,17 @@ module.exports = {
                 "@babel/preset-env"
               ]
             }
+          }
+        ]
+      },
+      // css
+      {
+        test: /\.css/,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: { url: false }
           }
         ]
       },
