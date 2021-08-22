@@ -302,3 +302,8 @@ For more info visit https://webpack.js.org/guides/code-splitting/
 **To v4 from v3 | webpack**  
 [https://webpack.js.org/migrate/4/](https://webpack.js.org/migrate/4/)  
 webpack-dev-server3.11.2から4にアップデートするとエラー出るので修正する  
+
+**npmてインストールされているハッケーシを、npm-check-updatesでまとめてアッフテートする方法**  
+[https://www.nxworld.net/npm-check-updates.html](https://www.nxworld.net/npm-check-updates.html)  
+>特定のパッケージを除外  
+`ncu -x xxx`  
