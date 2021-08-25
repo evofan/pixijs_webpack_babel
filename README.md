@@ -306,4 +306,4 @@ webpack-dev-server3.11.2から4にアップデートするとエラー出るの�
 **npmてインストールされているハッケーシを、npm-check-updatesでまとめてアッフテートする方法**  
 [https://www.nxworld.net/npm-check-updates.html](https://www.nxworld.net/npm-check-updates.html)  
 >特定のパッケージを除外  
-`ncu -x xxx`  
+`ncu -u -x xxx`  
