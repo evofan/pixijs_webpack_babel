@@ -307,3 +307,10 @@ webpack-dev-server3.11.2から4にアップデートするとエラー出るの�
 [https://www.nxworld.net/npm-check-updates.html](https://www.nxworld.net/npm-check-updates.html)  
 >特定のパッケージを除外  
 `ncu -u -x xxx`  
+
+**脆弱性の警告を受けたnpmパッケージの依存関係を力技で直す - Qiita**  
+[https://qiita.com/hibikikudo/items/0af352acac85fce28ec2](https://qiita.com/hibikikudo/items/0af352acac85fce28ec2)  
+>セキュリティチェックができるコマンド`npm audit`  
+>セキュリティチェックに追加して脆弱性のある箇所を自動修正してくれるサブコマンド`npm audit fix`  
+
+
