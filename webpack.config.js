@@ -11,7 +11,8 @@ module.exports = {
   // ローカル開発用環境を立ち上げる
   // 実行時にブラウザが自動的に localhost を開く
   devServer: {
-    contentBase: "dist",
+    // contentBase: "dist", webpack-dev-server ver.3
+    static: "dist",
     open: true
   },
 
@@ -75,8 +76,8 @@ module.exports = {
   },
   // performance: { hints: false }
   performance: {
-    maxEntrypointSize: 500000,
-    maxAssetSize: 500000,
+    maxEntrypointSize: 1000000, // s1Mbyte
+    maxAssetSize: 1000000, // 1Mbyte
   },
 
   // ES5(IE11等)向けの指定
