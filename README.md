@@ -314,7 +314,9 @@ webpack-dev-server3.11.2から4にアップデートするとエラー出るの�
 >セキュリティチェックに追加して脆弱性のある箇所を自動修正してくれるサブコマンド`npm audit fix`  
 
 　  
-90日で期限切れるので注意↓  
+#### 90日で期限切れるので注意↓  
+※アクセストークンの設定にGoogle認証システムで表示される6桁の数字が必要  
+<img src="https://evofan.github.io/pixijs_webpack_babel/screenshot/pic_digit2.jpg" width="25%">  
 
 **GitHubに二段階認証を設定した後にGit操作できない時の解決策 - Qiita**  
 [https://qiita.com/kitoko552/items/3f45de6c876c638b690d](https://qiita.com/kitoko552/items/3f45de6c876c638b690d)  
@@ -329,8 +331,3 @@ webpack-dev-server3.11.2から4にアップデートするとエラー出るの�
 
 5.ここの「passwd」という名前のファイルを消す  
 そうするとpushで再びユーザー名、パスワードを求められるので。パスワードでなく4.tokenを入力すればOK.
-
-
-
-
-
