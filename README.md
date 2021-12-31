@@ -313,4 +313,24 @@ webpack-dev-server3.11.2から4にアップデートするとエラー出るの�
 >セキュリティチェックができるコマンド`npm audit`  
 >セキュリティチェックに追加して脆弱性のある箇所を自動修正してくれるサブコマンド`npm audit fix`  
 
+　  
+90日で期限切れるので注意↓  
+
+**GitHubに二段階認証を設定した後にGit操作できない時の解決策 - Qiita**  
+[https://qiita.com/kitoko552/items/3f45de6c876c638b690d](https://qiita.com/kitoko552/items/3f45de6c876c638b690d)  
+>1. GitHubの自分のメニューからSettings>Developer settings>Personal access tokens  
+>2. Generate new token  
+>3. repoからgistまでを全てチェックしてGenerate token  
+>4. tokenをコピーしてどっかに保存（1回しか教えてくれないから注意）  
+
+**プッシュ時にエラーになってしまう。**  
+[https://community.atlassian.com/t5/Sourcetree-questions/%E3%83%97%E3%83%83%E3%82%B7%E3%83%A5%E6%99%82%E3%81%AB%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%97%E3%81%BE%E3%81%86/qaq-p/1483253](https://community.atlassian.com/t5/Sourcetree-questions/%E3%83%97%E3%83%83%E3%82%B7%E3%83%A5%E6%99%82%E3%81%AB%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%97%E3%81%BE%E3%81%86/qaq-p/1483253) >Windows をご利用の場合は以下のディレクトリのパスワードファイルをご確認ください。
+>C:\Users\USERNAME\AppData\Local\Atlassian\SourceTree  
+
+5.ここの「passwd」という名前のファイルを消す  
+そうするとpushで再びユーザー名、パスワードを求められるので。パスワードでなく4.tokenを入力すればOK.
+
+
+
+
 
