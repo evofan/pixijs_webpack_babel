@@ -145,7 +145,7 @@ for (let i = 0; i < MAX_NUM; i++) {
     container.addChild(snow);
 }
 
-ticker.start(); // reder start
+ticker.start(); // render start
 
 /**
  * app rendering

@@ -27,7 +27,7 @@ export const Common = {
   },
 
   getAppRenderType: app => {
-    let type = `rederer: ${TYPES[app.renderer.type]}`;
+    let type = `renderer: ${TYPES[app.renderer.type]}`;
     return type;
   }
 };
