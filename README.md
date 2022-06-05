@@ -331,3 +331,7 @@ webpack-dev-server3.11.2から4にアップデートするとエラー出るの�
 
 5.ここの「passwd」という名前のファイルを消す  
 そうするとpushで再びユーザー名、パスワードを求められるので。パスワードでなく4.tokenを入力すればOK.
+
+**Google認証システムの移行**  
+※前の端末でエクスポート(QRコード) → 新端末でインポート  
+<img src="https://evofan.github.io/pixijs_webpack_babel/screenshot/pic_moved.jpg" width="25%">
