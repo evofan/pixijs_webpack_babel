@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "npm-check-updates": "^12.5.10"
+    "npm-check-updates": "^16.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.17.10",
