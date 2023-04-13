@@ -334,4 +334,13 @@ webpack-dev-server3.11.2から4にアップデートするとエラー出るの�
 
 **Google認証システムの移行**  
 ※前の端末でエクスポート(QRコード) → 新端末でインポート  
-<img src="https://evofan.github.io/pixijs_webpack_babel/screenshot/pic_moved.jpg" width="25%">
+<img src="https://evofan.github.io/pixijs_webpack_babel/screenshot/pic_moved.jpg" width="25%">  
+
+2023.04.13  
+`npm install -D pixi.js@6.5.9`  
+(ver.6 latest)
+
+**Node.js：npmでパッケージのバージョンを指定してインストールする方法 | もためも**  
+[https://motamemo.com/nodejs/nodejs-tips/nodejs-npm-install-specific-version/](https://motamemo.com/nodejs/nodejs-tips/nodejs-npm-install-specific-version/)  
+>$ npm install react@16.9.0  # @の後にバージョン番号を指定  
+
